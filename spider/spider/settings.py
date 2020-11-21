@@ -28,20 +28,20 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 # Wrapper Variables
-S3_ACCESS_KEY = "AKIA2VQGKBNPRZ3EUQWN"
-S3_SECRET_KEY = "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"
+S3_ACCESS_KEY = ""
+S3_SECRET_KEY = ""
 
-STORAGE_DIRECTORY = "/opt/projects/spider/storage/"
-REDIS_PW = "ycho2020"
-REDIS_HOST = "ec2-13-125-115-204.ap-northeast-2.compute.amazonaws.com"
+STORAGE_DIRECTORY = ""
+REDIS_PW = ""
+REDIS_HOST = ""
 
 
 # DB Variables
-RDB_USER = 'admin'
-RDB_PW = 'crawlerproject'
-RDB_HOST = 'crawlerproject.caqngwufx8vj.ap-northeast-2.rds.amazonaws.com'
-RDB_DB = 'SpiderProject'
-RDB_CHARSET = 'utf8'
+RDB_USER = ''
+RDB_PW = ''
+RDB_HOST = ''
+RDB_DB = ''
+RDB_CHARSET = ''
 
 
 # Application definition
