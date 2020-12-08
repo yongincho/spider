@@ -8,8 +8,8 @@ Spider is an access control security solution aimed for various security usage.
   - Face Recognition / Identification
   - User Statistics and Profiling
 
-Specific Descrition:
-> Spider is an access control security solution that allows face detection to login using both the hardware (Raspberry Pi) and the software (Django) which will work as a 'Access control service' for various usage. Spider allows users to 'sign up' by uploading their facial images, which will be stored in the AWS S3 Cloud Storage. When the user wants to login to a platform, Spider will detect the user's face using the camera module of Raspberry Pi, and it will download the facial image (labeled to that user) from the cloud storage and will compare with the user's face who's trying to login. If the facial description matches (using opencv library), the user will be granted access. If not, they will be denied access. The focus of this security solution is the use of both the hardware and software component to create a safe and quick 'access control system.' The admin of Spider is provided with user statics and profiling through dashboard frontend. 
+Specific Description:
+> Spider is an access control security solution that allows face detection to login using both the hardware (Raspberry Pi) and the software (Django), which will work as an 'Access control service' for various usage. Spider allows users to 'sign up' by uploading their facial images, which will be stored in the AWS S3 Cloud Storage. When the user wants to log in to a platform, Spider will detect the user's face using the camera module of Raspberry Pi, and it will download the facial image (labeled to that user) from the cloud storage and will compare with the user's face who's trying to login. If the facial description matches (using OpenCV library), the user will be granted access. If not, they will be denied access. The focus of this security solution is the use of both the hardware and software components to create a safe and quick 'access control system.' The admin of Spider is provided with user statics and profiling through the dashboard frontend. 
 
 ### Tech
 
@@ -49,7 +49,7 @@ $ source activate
 ```
 If virtualenv is successfully activated, the command line should look like (envspider) ~~~
 
-Spider requires number of python libraries to run. Install requirements.txt:
+Spider requires a number of python libraries to run. Install requirements.txt:
 ```sh
 $ pip3 install -r requirements.txt
 ```
@@ -73,7 +73,7 @@ $ python3 manage.py runserver 0.0.0.0:8080
 
 
 ### User Manual
-1. Login or Register for admin account
+1. Login or Register for an admin account
         - This will redirect the admin to the dashboard.
 2. Upload Facial Images through the Face Register tab on the Navbar
         - Those with Facial Images uploaded are granted access by face detection (using the camera module of the Raspberry Pi 3).
@@ -81,7 +81,7 @@ $ python3 manage.py runserver 0.0.0.0:8080
 3. Dashboard tab shows the user statistics and profiling.
 4. About tab shows the general information on Spider.
 5. User Profile tab shows the user info who has been granted access by the admin.
-6. The side bar allows the admin to change background colors for the web.
+6. The sidebar allows the admin to change background colors for the web.
 
 ### WireFrame
 ![alt text](https://github.com/yongincho/spider/blob/main/extra/Spider_webdesign.png)
