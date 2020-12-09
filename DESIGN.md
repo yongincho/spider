@@ -1,8 +1,8 @@
 # Spider / Design
 
-Spider is a Django-based RESTful API that uses a face detection technique provided by the OpenCV library to implement an access control security solution. Bootstrap-based front-end is used with HTML, CSS, and JavaScript, and it is implemented with Django template-based front-end rendering and back-end linkage with Python 3.8. The server infrastructure has been built using Amazon Web Service (AWS) EC2 and S3 Cloud Storage. Database design and modeling have been implemented using PostgreSQL and Object-relational Mapping (ORM). Raspberry Pi 3 and its camera module are used as the hardware for Spider.
+Spider is a Django-based RESTful API that uses a face detection technique provided by the OpenCV library to implement an access control security solution. Bootstrap-based front-end is used with HTML, CSS, and JavaScript, and it is implemented with Django template-based front-end rendering and back-end linkage with Python 3.8. The server infrastructure has been built using Amazon Web Service (AWS) EC2 and S3 Cloud Storage. Database design and modeling have been implemented using PostgreSQL and Object-relational Mapping (ORM). Various hardwares/devices that have camera module such as PCs and Raspberry Pi can be used as hardware for Spider.
 
-Below describes the design decisions made:
+Below describes the design decisions made in Spider:
 - Django
 - Amazon Web Service - EC2 and S3
 - Database - PostgreSQL and Object-relational Mapping
@@ -19,7 +19,7 @@ Django is an open-source framework for back-end web applications based on Python
 
 ### Amazon Web Service - EC2 and S3
 
-Amazon Elastic Compute Cloud (Amazon EC2) is one of the most widely used web services that providee resizable compute capacity in the cloud. Spider used AWS EC2 for its web server because it is very easy and quick to make and boot new server instances, secure by Amazon VPC, reliable due to its proven network, comparably inexpensive, and is widely used by many developers. AWS EC2 also provides Amazon S3, which is a repository for internet data. S3 provides reliable and fast data storage infrastructure, which is used by Spider for facial image storage. It is easy to store and retrieve data from within Amazon EC2 or anywhere on the web, which is why it is utilized in Spider.
+Amazon Elastic Compute Cloud (Amazon EC2) is one of the most widely used web services that provides resizable compute capacity in the cloud. Spider uses AWS EC2 for its web server because it is very easy and quick to make and boot new server instances. It is also secure through Amazon VPC, reliable due to its proven network, comparably inexpensive, and is widely used by many developers. AWS EC2 also provides Amazon S3, which is a repository for internet data. S3 provides reliable and fast data storage infrastructure, which is used by Spider for facial image storage. It is easy to store and retrieve data from within Amazon EC2 or anywhere on the web, which is why it is utilized in Spider.
 
 [ References2 ], [ References3 ]
 
@@ -43,7 +43,7 @@ OpenCV is one of the largest open-source libraries for computer vision, machine 
 
 ### RESTful API
 
-RESTful API is one of the most popular types of API. REST (Representational State Transfer) can be used on nearly any protocol and takes advantage of HTTP when used for web APIs. It provides a lot of flexibility for diverse customers, and Spider uses RESTful API as it is one of the most common API and fits the need of Spider.
+RESTful API is one of the most popular types of API. REST (Representational State Transfer) can be used on nearly any protocol and takes advantage of HTTP when used for web APIs. It provides a lot of flexibility for diverse customers, and Spider uses RESTful API as it is one of the most common API and its flexibility allows various users to use Spider. Admin interface 와 사용자 API
 
 [ References7 ]
 
