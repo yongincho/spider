@@ -50,6 +50,27 @@ Spider requires a number of python libraries to run. Install requirements.txt:
 $ pip3 install -r requirements.txt
 ```
 
+Install OpenCV Library:
+```sh
+$ brew install ninja pkg-config
+$ wget http://dlib.net/files/dlib-19.2.tar.bz2 -O /tmp/dlib-19.2.tar.bz2
+$ tar xvjf /tmp/dlib-19.2.tar.bz2 -C ./
+$ cd dlib-19.2
+$ mkdir build && cd build
+$ cmake -G Ninja ..
+$ cmake --build . --config Release
+$ cd ../
+$ sudo python setup.py install
+```
+If installing setup.py does not work:
+```sh
+$ brew cask install xquartz
+$ brew install gtk+3 boost
+$ brew install boost-python3
+$ pip3 install face_recognition
+$ pip3 install opencv-python
+```
+
 Migrate Postgres DB:
 ```sh
 $ python3 manage.py makemigrations
