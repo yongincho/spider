@@ -127,6 +127,8 @@ License
 
 Spider Co. Ltd.
 
+Design of the bootstrap template from Creative Tim (https://www.creative-tim.com)
+
 
 **Hope you make the most out of Spider!**
 
