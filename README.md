@@ -11,6 +11,10 @@ Spider is an access control security solution aimed for various security usage.
 Specific Description:
 > Spider is an access control security solution that allows face detection to login through the software (Django) API along with other hardwares with camera module, which will work as an 'Access control service' for various usage. Spider allows the admin to sign up users by uploading their facial images, which will be stored in the AWS S3 Cloud Storage. When the user wants to log in to a platform, Spider will detect the user's face using the camera module of a hardware device, and it will download the facial image (labeled to that user) from the cloud storage and will compare with the user's face who is trying to login. If the facial description matches (using OpenCV library), the user will be granted access. If not, they will be denied access. The focus of this security solution is to create a safe and quick 'access control system' by providing friendly admin interface and user API. The admin of Spider is provided with user statics and profiling through the dashboard interface. However, some part of the admin interface has yet to be implemented, and the API has been tested through Postman, an API development tool.
 
+Github Repository: https://github.com/yongincho/spider 
+(Please look into this repository for the full code of the project. Only README.md and DESIGN.md have been included on Gradescope because there were too many files to be uploaded to Gradescope.)
+
+
 ### Tech
 
 Below is the specification for technologies used in Spider:
@@ -114,7 +118,7 @@ $ python3 manage.py runserver 0.0.0.0:8080
 ![alt text](https://github.com/yongincho/spider/blob/main/extra/Spider_screenshot6.png)
 
 
-### Into Video Link
+### Intro Video Link
 - https://youtu.be/3Ngv1-RI9tw
 
 
