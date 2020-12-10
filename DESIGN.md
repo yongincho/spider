@@ -43,7 +43,7 @@ OpenCV is one of the largest open-source libraries for computer vision, machine 
 
 ### RESTful API
 
-RESTful API is one of the most popular types of API. REST (Representational State Transfer) can be used on nearly any protocol and takes advantage of HTTP when used for web APIs. It provides a lot of flexibility for diverse customers, and Spider uses RESTful API as it is one of the most common API and its flexibility allows various users to use Spider. Admin interface 와 사용자 API
+RESTful API is one of the most popular types of API. REST (Representational State Transfer) can be used on nearly any protocol and takes advantage of HTTP when used for web APIs. It provides a lot of flexibility for diverse customers, and Spider uses RESTful API as it is one of the most common API and its flexibility allows various users to use Spider. 
 
 [ References7 ]
 
